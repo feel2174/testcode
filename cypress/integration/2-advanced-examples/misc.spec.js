@@ -85,8 +85,8 @@ context('Misc', () => {
         scale: false,
         disableTimersAndAnimations: true,
         screenshotOnRunFailure: true,
-        onBeforeScreenshot() {},
-        onAfterScreenshot() {},
+        onBeforeScreenshot() { },
+        onAfterScreenshot() { },
       });
     });
   });
