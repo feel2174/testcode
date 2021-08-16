@@ -8,7 +8,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended', // 해당 플러그인의 권장 규칙을 사용합니다.
     'plugin:cypress/recommended',
     'plugin:prettier/recommended', // plugin과 eslint-config-prettier 설정을 한번에 합니다.
@@ -21,16 +20,23 @@ module.exports = {
     ecmaVersion: 12, // Modern ECMAScript를 파싱할 수 있습니다.
     sourceType: 'module', // import, export를 사용할 수 있습니다.
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'cypress'],
   rules: {
     // ESLint 규칙을 지정합니다. extends에서 지정된 규칙을 덮어 쓸수도 있습니다.
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'cypress/no-assigning-return-values': 'error',
+    'cypress/no-unnecessary-waiting': 'off',
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    '@typescript-eslint/no-empty-function': 'off',
+    'cypress/no-async-tests': 'error',
   },
   settings: {
     react: {
       version: 'detect', // 현재 사용하고 있는 react 버전을 eslint-plugin-react가 자동으로 감지합니다.
     },
   },
+  ignorePatterns: ['node_modules', 'coverage', 'build', 'dist', '*.spec.js', '*.config.{js,ts}'],
 };
