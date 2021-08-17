@@ -32,6 +32,7 @@ module.exports = {
     'cypress/no-force': 'warn',
     '@typescript-eslint/no-empty-function': 'off',
     'cypress/no-async-tests': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
   settings: {
     react: {
