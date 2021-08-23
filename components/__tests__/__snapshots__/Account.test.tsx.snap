@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div>
+    <h2>
+      호박너구리
+    </h2>
+    <p>
+      호박너구리
+    </p>
+    <p>
+      30
+    </p>
+  </div>
+</div>
+`;
