@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app';
-import StyledProvider from 'components/StyledProvider';
+import StyleProvider from 'styles/StyleProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <StyledProvider>
+    <StyleProvider>
       <Component {...pageProps} />
-    </StyledProvider>
+    </StyleProvider>
   );
 }
 export default MyApp;
