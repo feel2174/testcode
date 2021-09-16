@@ -9,6 +9,13 @@ const functions = {
     user['lastName'] = 'Song';
     return user;
   },
+  repeat: (word, times = 2) => {
+    let words = [];
+    for (let i = 0; i < times; i++) {
+      words.push(word);
+    }
+    return words.join(); // 베열 대신 문자열 반환
+  },
   fetchUser: () =>
     axios
       .get('https://koreanjson.com/users/1')

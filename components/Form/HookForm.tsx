@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import React from 'react';
 import { FormErrorMessage, FormLabel, FormControl, Input, Button } from '@chakra-ui/react';
 
-const HookForm = () => {
+const HookForm = (props: { name?: string }) => {
   const {
     handleSubmit,
     register,
@@ -17,6 +17,7 @@ const HookForm = () => {
       }, 1000);
     });
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <FormControl style={{ display: 'flex', flexDirection: 'column', gap: '30px' }} isInvalid={errors.name}>
@@ -32,7 +33,7 @@ const HookForm = () => {
           />
         </div>
         <div>
-          <FormLabel htmlFor="name">Nickname</FormLabel>
+          <FormLabel htmlFor="name">{props.name}</FormLabel>
           <Input
             id="nickname"
             placeholder="nickname"

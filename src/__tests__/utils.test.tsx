@@ -10,6 +10,10 @@ test('Adds 2 + 2 to NOT equal 5', () => {
   expect(functions.add(2, 2)).not.toBe(5);
 });
 
+test('repeat words three times', () => {
+  expect(functions.repeat('test', 3)).toMatchInlineSnapshot(`"test,test,test"`);
+});
+
 test('Should be falsy', () => {
   expect(functions.checkValue(undefined)).toBeFalsy();
 });
