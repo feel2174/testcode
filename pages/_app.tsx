@@ -1,11 +1,14 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 import StyleProvider from 'styles/StyleProvider';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <StyleProvider>
-      <Component {...pageProps} />
-    </StyleProvider>
+    <ChakraProvider>
+      <StyleProvider>
+        <Component {...pageProps} />
+      </StyleProvider>
+    </ChakraProvider>
   );
-}
+};
 export default MyApp;
