@@ -27,18 +27,7 @@ const GlobalStyle = createGlobalStyle`
     touch-action: manipulation; 
     box-sizing: border-box;
   }
-  @font-face {
-    font-family: 'IBMPlexSansKR-Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'IBMPlexSansKR-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
+
   *:focus { 
     -webkit-tap-highlight-color: transparent; 
     outline: none; 
