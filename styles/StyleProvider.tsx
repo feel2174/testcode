@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 
-import { light } from 'styles/theme';
+import { theme } from 'styles/theme';
 import GlobalStyle from 'styles/globals';
 
 interface Props {
@@ -8,7 +8,6 @@ interface Props {
 }
 
 const StyledProvider = ({ children }: Props) => {
-  const theme = light;
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
