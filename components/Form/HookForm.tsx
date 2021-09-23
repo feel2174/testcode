@@ -20,7 +20,7 @@ const HookForm = (props: { name?: string }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <FormControl style={{ display: 'flex', flexDirection: 'column', gap: '30px' }} isInvalid={errors.name}>
+      <FormControl style={{ display: 'flex', flexDirection: 'column', gap: '30px', margin: '50px 0px' }} isInvalid={errors.name}>
         <div>
           <FormLabel htmlFor="name">First name</FormLabel>
           <Input

@@ -15,7 +15,7 @@ describe('HookForm', () => {
 //   });
 // });
 
-test('matches snapshot', () => {
-  const { container } = render(<HookForm name="호박너구리" />);
-  expect(container).toMatchSnapshot();
-});
+// test('matches snapshot', () => {
+//   const { container } = render(<HookForm name="호박너구리" />);
+//   expect(container).toMatchSnapshot();
+// });

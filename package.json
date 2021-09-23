@@ -18,14 +18,17 @@
     "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "autoprefixer": "^10.3.5",
     "axios": "^0.21.1",
     "cypress": "^8.2.0",
     "framer-motion": "^4",
     "next": "11.0.1",
+    "postcss": "^8.3.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.15.1",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "tailwindcss": "^2.2.15"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

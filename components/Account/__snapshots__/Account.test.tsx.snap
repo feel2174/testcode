@@ -2,12 +2,14 @@
 
 exports[`matches snapshot 1`] = `
 <div>
-  <div>
+  <div
+    class="css-1cvyltp"
+  >
     <h2>
       너구리호박
     </h2>
     <p>
-      너구리호박
+      INFP
     </p>
     <p>
       30

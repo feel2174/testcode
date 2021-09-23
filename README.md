@@ -2,6 +2,8 @@
 
 Jest와 React Testing Library를 사용하여 테스트 코드를 작성합니다.
 
+testable한 코드를 작성하기 위한 여러가지 시도를 포함합니다.
+
 ## Getting Started
 
 How to run test:

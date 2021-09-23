@@ -1,18 +1,15 @@
 import { Box } from '@chakra-ui/layout';
-import { ThemeConsumer } from 'styled-components';
+import Account from 'components/Account/Account';
 
 import HookForm from 'components/Form/HookForm';
 
 export default function Home() {
   return (
     <>
-      <ThemeConsumer>
-        {(_theme) => (
-          <Box p={16}>
-            <HookForm />
-          </Box>
-        )}
-      </ThemeConsumer>
+      <Box p={16}>
+        <Account />
+        <HookForm />
+      </Box>
     </>
   );
 }
